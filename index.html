@@ -2,31 +2,36 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title>
+<title>我的天气</title> 
 <style>
-div.ex
-{ 	  border-radius: 25px;
-padding:0px;
-border:0px solid gray;
-margin:0%;
-
+.container {
+    position: relative;
 }
-imag{position:relative;  border-radius: 25px;
-	}
 
-	iframe{top:20px;position: absolute;padding:10% 5% 5% 18%;height:36px;  border-radius: 25px;}	
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width:300px;
+    text-align: center;
+    font-size: 18px;
+	margin-top:-20px;
+	  opacity: 0.9;
+}
+
+img { border-radius: 10px;
+    width: 300px;
+    height: auto;
+    opacity: 0.7;
+}
 </style>
 </head>
-
 <body>
-
-
-<div class="ex">  
-		<iframe src="https://free.timeanddate.com/clock/i8g5dtdr/n1932/tlcn8/fn9/fs16/fcfff/tct/pct/tt0/th2/tb4"
-			frameborder="0" width="150" height="auto"  allowtransparency="true"></iframe>
-		<div id="he-plugin-simple"></div>
-	<img src="http://bing.creepersan.com/api/v1/img-current" width=250px height=auto/>
-
+<div class="container">
+  <img src="https://cn.bing.com//th?id=OHR.EsPantaleu_ZH-CN8612029580_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" alt="Norway" width="180" height="auto">
+  <div class="center"><iframe src="https://free.timeanddate.com/clock/i8g5dtdr/n1932/tlcn8/fn9/fs16/fcfff/tct/pct/tt0/th2/tb4" frameborder="0" width="180" height="41" allowtransparency="true"></iframe>
+<div id="he-plugin-simple"></div>
+<div id="he-plugin-simple"></div>
 <script>
 WIDGET = {
   "CONFIG": {
@@ -40,18 +45,21 @@ WIDGET = {
     "aqiSize": "16",
     "weatherIconSize": "24",
     "alertIconSize": "18",
-    "padding": "-200px",
+    "padding": "10px 10px 10px 10px",
     "shadow": "0",
     "language": "auto",
-    "fixed": "true",
-    "vertical": "center",
-    "horizontal": "right",
-    "key": "52b942b6a733494f8da19b56fdc8eceb"
+    "borderRadius": "5",
+    "fixed": "false",
+    "vertical": "left",
+    "horizontal": "center",
+    "key": "28829c46323346cba034a3bac097f9f5"
   }
 }
-</script>
-<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script></div>
+</script>a
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+	  
+	  
+</div>
 
-	</div>
 </body>
 </html>
